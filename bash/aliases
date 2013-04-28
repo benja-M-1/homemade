@@ -1,0 +1,20 @@
+# Some ls aliases 
+alias ll='ls -alf'
+
+# Vi becomes Vim
+alias vi='vim'
+
+# Hub aliases git
+eval "$(hub alias -s)"
+
+# Composer
+if [ -f ~/.composer/composer.phar ]; then
+    alias composer='php ~/.composer/composer.phar'
+fi
+
+# PHPUnit alias
+alias phpunit="php ~/pear/bin/phpunit"
+
+# XDebug
+alias xdebug="export XDEBUG_CONFIG=\"idekey=phpstorm-idekey\""
+

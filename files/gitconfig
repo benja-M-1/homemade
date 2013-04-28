@@ -1,0 +1,24 @@
+[user]
+	name = Benjamin Grandfond
+	email = benjamin.grandfond@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
+[core]
+	editor = vi 
+	excludesfile = ~/.gitexcludes
+[push]
+	default = current
+[alias]
+	st  = status
+	lg  = log -M --decorate --graph --oneline
+	ci  = commit
+	pur = pull --rebase
+	br  = branch
+	co  = checkout
+	rc  = rebase --continue
+	sth = stash
+

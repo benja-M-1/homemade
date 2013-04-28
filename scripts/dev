@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Change the current dir to a project in the Development dir if it exists.
+#
+
+function dev() {
+    DEV_DIR="${HOME}/Development"
+    PROJECT=$1
+    TARGET="${DEV_DIR}/${PROJECT}"
+
+    if [ -d "$TARGET" ]; then
+        cd $TARGET
+    else
+        echo "The project $PROJECT does not exists in $DEV_DIR"
+    fi
+}

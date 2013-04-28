@@ -1,0 +1,17 @@
+#!/bin/bash
+#####
+# Homemade v0.1
+#
+# Include each script
+#
+
+# Directory of scripts
+src="${HOME}/.homemade/scripts"
+
+# Source each script
+for script in `ls "$src/"`
+do
+    if [ -f "${src}/${script}" ]; then
+        . "${src}/${script}"
+    fi 
+done
